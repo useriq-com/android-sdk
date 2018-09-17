@@ -12,7 +12,7 @@ This guide will provide you with step by step details on how to integrate the SD
 
 1. Open build.gradle from the app folder of your project and include the SDK
 
-```
+```groovy
 android {
     ...
 }
@@ -30,7 +30,7 @@ dependencies {
 1. Open up your custom subclass of android.app.Application
 2. Initialize UserIQSDK by including following lines in onCreate() method Application subclass.
 
-```
+```java
 import com.appunfold.sdk.UserIQSDK;
 ...
 @Override
@@ -49,7 +49,7 @@ Until user is set, SDK will work in passive mode & does not send any data!
 1. Open up the home activity (the activity, which comes immediately after the login)
 2. Build & set the user in onCreate() method of opened activity.
 
-```
+```java
 import com.appunfold.sdk.UserIQSDK;
 ...
 @Override
@@ -70,9 +70,10 @@ protected void onCreate(Bundle savedInstanceState) {
 
 ### Alternate Installation
 
-1. Downlaod the .aar file from [here](https://github.com/useriq-com/android-sdk/tree/master/SDK)
+1. [Download](https://github.com/useriq-com/android-sdk/tree/master/SDK) the .aar file.
 2. Add the .aar file to your project's libs folder. 
-3. [Initialize the SDK](#step-2--initialize-the-sdk)
-4. [Set the user](#step-3--set-the-user)
+    [image](images/libs_location.png)
+3. Initialize the SDK. [(Step 2)](#step-2--initialize-the-sdk)
+4. Set the user. [(Step 3)](#step-3--set-the-user)
 
 Note - The **_API-KEY_** can be obtained from the integration page of your app in the UserIQ dashboard.
