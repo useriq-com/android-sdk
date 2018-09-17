@@ -72,7 +72,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 1. [Download](https://github.com/useriq-com/android-sdk/tree/master/SDK) the .aar file.
 2. Add the .aar file to your project's libs folder. 
-    [image](images/libs_location.png)
+    ![](images/libs_location.png)
 3. Initialize the SDK. [(Step 2)](#step-2--initialize-the-sdk)
 4. Set the user. [(Step 3)](#step-3--set-the-user)
 
