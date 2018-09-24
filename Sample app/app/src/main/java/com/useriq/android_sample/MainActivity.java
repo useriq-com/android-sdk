@@ -18,12 +18,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         UserIQSDK.User user = new UserIQSDK.UserBuilder()
-                .setId("EMP124")
+                .setId("101")
                 .setAccountId("1")
-                .setAccountName("Acme Corp")
-                .setName("Alex")
-                .setEmail("alex@useriq.com")
-                .addParams("location", "Atlanta")
+                .setAccountName("Palkesh")
+                .setName("Palkesh")
+                .setEmail("palkesh@useriq.com")
+                .addParams("location", "Bengaluru")
                 .build();
         UserIQSDK.setUser(user);
 
