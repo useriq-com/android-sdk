@@ -108,3 +108,18 @@ boolean isCtxHelpShown = UserIQSDK.showCtxHelp();
 ```
 
 Contextual help will only be shown when the current screen is tagged. If the current screen is not tagged then the above API will return `false`
+
+#### InApp-Notification
+![](images/inapp-default.gif)
+
+#### NPS
+![](images/nps.gif)
+
+#### StarRating
+![](images/star.gif)
+
+#### Contexual Help
+![](images/ctxHelp.gif)
+
+#### HelpCentre
+![](images/helpcenter.gif)
