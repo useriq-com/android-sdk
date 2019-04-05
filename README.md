@@ -20,7 +20,7 @@ repositories {
     jcenter()
 }
 dependencies {
-  compile 'com.useriq:sdk:2.0.0'
+  compile 'com.useriq:sdk:2.0.1'
   ... // your dependencies
 }
 ```
