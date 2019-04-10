@@ -75,7 +75,7 @@ If you use proguard, you may need to add the following lines to your proguard ru
 ```pro
 # Retain UserIQ SDK service while optimizing.
 -keep public class com.useriq.sdk.SDKService {
-    *;
+    public *;
 }
 ```
 
