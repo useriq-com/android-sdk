@@ -68,6 +68,17 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
+### Step 4 : Configure ProGuard
+
+If you use proguard, you may need to add the following lines to your proguard rules file
+
+```pro
+# Retain UserIQ SDK service while optimizing.
+-keep public class com.useriq.sdk.SDKService {
+    *;
+}
+```
+
 ## Alternate Installation
 
 1. [Download](https://github.com/useriq-com/android-sdk/tree/master/SDK) the .aar file.
