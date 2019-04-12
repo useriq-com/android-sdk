@@ -68,7 +68,17 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-### Step 4 : Configure ProGuard
+### Step 4 : Add the custom parameters (optional)
+
+Add any custom attributes about the user in the `addParams(String key, String value)`
+
+E.g.- `.addParams("location", "Atlanta")`
+
+`.addParams("userType", "admin")`
+
+`.addParams("profession", "Dietician")`
+
+### Step 5 : Configure ProGuard
 
 If you use proguard, you may need to add the following lines to your proguard rules file
 
