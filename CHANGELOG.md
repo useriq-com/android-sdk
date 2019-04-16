@@ -3,6 +3,11 @@
 All notable changes in Android SDK are documented here. We adhere to
 [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+### [2.0.2] - 2019-04-12
+
+#### Minor improvement
+- Change in the android API used for getting position of the root view
+
 ### [2.0.1] - 2019-04-05
 
 #### React native 
