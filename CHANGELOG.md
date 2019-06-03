@@ -3,10 +3,32 @@
 All notable changes in Android SDK are documented here. We adhere to
 [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+### [2.1.0] - 2019-05-30
+
+#### Added
+
+- Landscape Orientation support (on Dashboard)
+
+#### Updated
+
+- Added event tracking for campaings (walkthrough & campaigns)
+
+#### Fixed
+
+- Fixed React Native click tracking
+- Fixed walkthrough tooltip's button for react native
+- Sending App resume event on IO connection
+- Other minor bug fixes
+
 ### [2.0.4] - 2019-05-11
 
-#### Reuse existing Websocket when setUser is called
-#### Added debug logs for critical situations
+#### Fixed
+
+- Reuse existing Websocket when setUser is called
+
+#### Added 
+
+- Added debug logs
 
 ### [2.0.3] - 2019-04-16
 
