@@ -3,6 +3,25 @@
 All notable changes in Android SDK are documented here. We adhere to
 [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+### [2.2.0] - 2019-06-17
+
+#### Added
+
+- Automatic/Manual tooltip positioning support (2 positions)
+- Automatic/Manual beacon and number tooltip positioning support (9 positions)
+- Support for `x` and `y` offsets for tooltips
+- Ability to make walkthrough wait for the next step for a specific amount of time
+- Keyboard support for emulators (on Dashboard)
+- Copy/Paste support for emulators (on Dashboard)
+
+#### Updated
+
+- Walkthrough enhancements
+
+#### Fixed
+
+- Minor bug fixes
+
 ### [2.1.0] - 2019-05-30
 
 #### Added
