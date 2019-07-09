@@ -20,15 +20,14 @@ repositories {
     jcenter()
 }
 dependencies {
-  compile 'com.useriq:sdk:2.1.0'
+  compile 'com.useriq:sdk:2.3.0'
   ... // your dependencies
 }
 ```
 
 ### Step 2 : Initialize the SDK 
 
-1. Open up your custom subclass of android.app.Application
-2. Initialize UserIQSDK by including following lines in onCreate() method Application subclass.
+1. Initialize UserIQSDK by calling `init(Activity activity, String api)`
 
 ```java
 import com.appunfold.sdk.UserIQSDK;
@@ -45,9 +44,8 @@ protected void onCreate(Bundle savedInstanceState) {
 
 ### Step 3 : Set the user
 
-Until user is set, SDK will work in passive mode & does not send any data!
 1. Open up the home activity (the activity, which comes immediately after the login)
-2. Build & set the user in onCreate() method of opened activity.
+2. Build the user using `UserIQSDK.UserBuilder` & set the user via `setUser(Context context, User user)` method of UserIQSDK.
 
 ```java
 import com.appunfold.sdk.UserIQSDK;
@@ -62,7 +60,7 @@ protected void onCreate(Bundle savedInstanceState) {
             .setEmail("alex@useriq.com")
             .addParams("location", "Atlanta")
             .build();
-    UserIQSDK.setUser(user);
+    UserIQSDK.setUser(this, user);
           
     //your code
 }
@@ -107,28 +105,21 @@ Floating Action Button (FAB) can be permanently disabled by calling the `disable
 ```java
 UserIQSDK.disableFAB();
 ```
-This can be called anytime before or after initializing the SDK. Once invoked, it will hide the FAB & also
-overrides the enableFAB sent from the dashboard. (ie) if this method is called on the SDK, this will take precendence over
-configuration from dashboard!
 
 ### Show Helpcenter
 
-Helpcenter can be programatically invoked by calling `UserIQSDK.showHelpCenter()`
+Helpcenter can be programatically invoked by calling `UserIQSDK.showHelpCenter(this)`
 
 ```java
-boolean isHelpCenterShown = UserIQSDK.showHelpCenter();
+boolean isHelpCenterShown = UserIQSDK.showHelpCenter(this);
 ```
-
-When Modal window or popup is active, helpcenter can't be shown. In those cases, above API will return `false`
 
 ### Show Contextual help
-Contextual help can be shown by calling `UserIQSDK.showCtxHelp()`
+Contextual help can be shown by calling `UserIQSDK.showCtxHelp(this)`
 
 ```java
-boolean isCtxHelpShown = UserIQSDK.showCtxHelp();
+boolean isCtxHelpShown = UserIQSDK.showCtxHelp(this);
 ```
-
-Contextual help will only be shown when the current screen is tagged. If the current screen is not tagged then the above API will return `false`
 
 #### InApp-Notification
 ![](images/inapp-default.gif)

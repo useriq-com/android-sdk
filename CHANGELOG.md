@@ -3,6 +3,30 @@
 All notable changes in Android SDK are documented here. We adhere to
 [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+### [2.3.0] - 2019-07-09
+
+#### Added
+
+- New campaign button action support: `Open Question` & `Start Walkthrough`
+- New APIs
+  - public static void init(Activity activity, String apiKey)
+  - public static void setUser(Context context, User user)
+  - public static boolean showCtxHelp(Context context)
+  - public static boolean showHelpCentre(Context context)
+#### Updated
+
+- Improved UI for helpcenter
+- Support for Tooltip styling
+
+#### Deprected
+
+- public static void init(Application application, String apiKey)
+- public static void setUser(User user)
+- public static boolean showCtxHelp()
+- public static boolean showHelpCentre()
+
+---
+
 ### [2.2.0] - 2019-06-17
 
 #### Added
