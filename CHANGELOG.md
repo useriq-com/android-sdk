@@ -3,6 +3,24 @@
 All notable changes in Android SDK are documented here. We adhere to
 [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+### [2.4.0] - 2019-07-25
+
+#### Added
+
+- Comment box support in NPS & Star campaigns
+- New campaign button action OPEN_WEBVIEW. Opens a desired url in a webview in the app.
+- Xamarin automation id support
+
+#### Updated
+
+- Improved screen detection mechanism
+
+#### Fixed
+
+- Added support for custom RootView (for React-native)
+
+---
+
 ### [2.3.0] - 2019-07-09
 
 #### Added
