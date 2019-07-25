@@ -121,6 +121,12 @@ Contextual help can be shown by calling `UserIQSDK.showCtxHelp(this)`
 boolean isCtxHelpShown = UserIQSDK.showCtxHelp(this);
 ```
 
+## ⚠ Important  
+
+Make sure that views that needs click tracking has click tracker attached to it or `clickable` is set to `true`. 
+
+For view with `clickable` set as `false`, UserIQSDK won't be able to track the clicks due to limitation of Android SDK.
+
 #### InApp-Notification
 ![](images/inapp-default.gif)
 
