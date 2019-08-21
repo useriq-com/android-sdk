@@ -96,3 +96,6 @@ If you use proguard, you may need to add the following lines to your proguard ru
 4. Set the user. [(Step 3)](#step-3--set-the-user)
 
 Note - The **_API-KEY_** can be obtained from the integration page of your app in the UserIQ dashboard.
+
+For more details on API & usage, please refer to [wiki page](https://github.com/useriq-com/android-sdk/wiki)
+
