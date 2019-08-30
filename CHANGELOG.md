@@ -3,11 +3,21 @@
 All notable changes in Android SDK are documented here. We adhere to
 [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+### [2.4.2] - 2019-08-30
+
+#### Added
+
+- Support for Tooltip in modals
+
+---
+
 ### [2.4.1] - 2019-08-08
 
 #### Updated
 
 - Xposed APP_FOREGROUND event to dashboard
+
+---
 
 ### [2.4.0] - 2019-07-25
 
