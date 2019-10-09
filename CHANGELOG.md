@@ -3,6 +3,12 @@
 All notable changes in Android SDK are documented here. We adhere to
 [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+### [2.5.0] - 2019-10-09
+
+#### Updated
+- Increased timeout for network calls
+- Improved performance in live previews
+
 ### [2.4.2] - 2019-08-30
 
 #### Added
