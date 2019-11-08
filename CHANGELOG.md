@@ -7,7 +7,7 @@ All notable changes in Android SDK are documented here. We adhere to
 
 #### Updated
 
-- Minor bug fixes & performance improvements
+- Reduced in-app message delay from 3000 ms to 250 ms
 
 ---
 
