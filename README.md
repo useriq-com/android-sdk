@@ -7,7 +7,7 @@ This guide will provide you with step by step details on how to integrate the SD
 - [Step 1 : Add the dependency for UserIQ SDK](#step-1--add-the-dependency-for-useriq-sdk)
 - [Step 2 : Initialize the SDK](#step-2--initialize-the-sdk)
 - [Step 3 : Set the user](#step-3--set-the-user)
-- [Step 4 : Add the custom parameters (optional)](#step-4--add-the-custom-parameters--optional)
+- [Step 4 : Add the custom parameters (optional)](#step-4--add-the-custom-parameters-optional)
 - [Step 5 : Logout](#step-5--logout)
 - [Step 6 : Configure ProGuard](#step-6--configure-proguard)
 
