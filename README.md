@@ -7,6 +7,10 @@ This guide will provide you with step by step details on how to integrate the SD
 - [Step 1 : Add the dependency for UserIQ SDK](#step-1--add-the-dependency-for-useriq-sdk)
 - [Step 2 : Initialize the SDK](#step-2--initialize-the-sdk)
 - [Step 3 : Set the user](#step-3--set-the-user)
+- [Step 4 : Add the custom parameters (optional)](#step-4--add-the-custom-parameters--optional)
+- [Step 5 : Logout](#step-5--logout)
+- [Step 6 : Configure ProGuard](#step-6--configure-proguard)
+
 
 ### Step 1 : Add the dependency for UserIQ SDK
 
@@ -20,7 +24,7 @@ repositories {
     jcenter()
 }
 dependencies {
-  compile 'com.useriq:sdk:2.4.1'
+  compile 'com.useriq:sdk:2.6.0'
   ... // your dependencies
 }
 ```
@@ -76,7 +80,15 @@ E.g.- `.addParams("location", "Atlanta")`
 
 `.addParams("profession", "Dietician")`
 
-### Step 5 : Configure ProGuard
+### Step 5 : Logout
+
+If a user logs out, the user can be reset to anonymous user just by calling the `logout` API. Make sure this method is called when the user logs out, so that login screen tracking and other information not related to the user does not get linked to the user.
+
+```java
+UserIQSDK.logOut()
+```
+
+### Step 6 : Configure ProGuard
 
 If you use proguard, you may need to add the following lines to your proguard rules file
 
