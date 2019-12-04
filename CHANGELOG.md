@@ -3,6 +3,25 @@
 All notable changes in Android SDK are documented here. We adhere to
 [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+### [2.6.0] - 2019-12-04
+
+#### Added
+
+- Logout API.
+- SDK initialised with anonymous user when initWithAPIKey is called without setUser
+- Detail logging for exceptions
+- Added provision for SDK kill switch.
+
+#### Updated
+
+- Store additional parameters for same user in case of multiple `setUser` calls
+
+#### Removed
+
+- isOffline API
+
+---
+
 ### [2.5.2] - 2019-11-28
 
 #### Fixed
