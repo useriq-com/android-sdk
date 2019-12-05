@@ -7,10 +7,10 @@ All notable changes in Android SDK are documented here. We adhere to
 
 #### Added
 
-- Logout API.
-- SDK initialised with anonymous user when initWithAPIKey is called without setUser
+- Logout API (see [readme for details](https://github.com/useriq-com/android-sdk#step-5--logout))
+- SDK initialised with anonymous user when `initWithAPIKey` is called
 - Detail logging for exceptions
-- Added provision for SDK kill switch.
+- Added kill switch in SDK (can be triggered from backend)
 
 #### Updated
 
