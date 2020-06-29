@@ -3,6 +3,14 @@
 All notable changes in Android SDK are documented here. We adhere to
 [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+### [2.7.0] - 2020-06-29
+
+#### Added 
+
+- Launching InApp Modal from another InApp Modal
+
+---
+
 ### [2.6.0] - 2019-12-04
 
 #### Added
