@@ -24,7 +24,7 @@ repositories {
     jcenter()
 }
 dependencies {
-  implementation 'com.useriq:sdk:2.8.0'
+  implementation 'com.useriq:sdk:2.8.1'
   ... // your dependencies
 }
 ```
@@ -34,7 +34,7 @@ dependencies {
 1. Initialize UserIQSDK by calling `init(Activity activity, String api)`
 
 ```java
-import com.appunfold.sdk.UserIQSDK;
+import com.useriq.sdk.UserIQSDK;
 ...
 @Override
 protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +52,7 @@ protected void onCreate(Bundle savedInstanceState) {
 2. Build the user using `UserIQSDK.UserBuilder` & set the user via `setUser(Context context, User user)` method of UserIQSDK.
 
 ```java
-import com.appunfold.sdk.UserIQSDK;
+import com.useriq.sdk.UserIQSDK;
 ...
 @Override
 protected void onCreate(Bundle savedInstanceState) {
