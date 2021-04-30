@@ -3,6 +3,14 @@
 All notable changes in Android SDK are documented here. We adhere to
 [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+### [2.8.2] - 2021-04-30
+
+#### Added
+
+- Jitpack Support
+
+---
+
 ### [2.8.1] - 2020-09-19
 
 #### Added

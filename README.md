@@ -12,7 +12,20 @@ This guide will provide you with step by step details on how to integrate the SD
 - [Step 6 : Configure ProGuard](#step-6--configure-proguard)
 
 
-### Step 1 : Add the dependency for UserIQ SDK
+### Step 1 :  Add the JitPack repository to your root build.gradle file
+
+1. Add JitPack repository in your root build.gradle at the end of repositories:
+
+```groovy
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+### Step 2 : Add the dependency for UserIQ SDK
 
 1. Open build.gradle from the app folder of your project and include the SDK
 
@@ -24,12 +37,12 @@ repositories {
     jcenter()
 }
 dependencies {
-  implementation 'com.useriq:sdk:2.8.1'
+  implementation 'com.github.useriq-com:android-sdk:2.8.2'
   ... // your dependencies
 }
 ```
 
-### Step 2 : Initialize the SDK 
+### Step 3 : Initialize the SDK 
 
 1. Initialize UserIQSDK by calling `init(Activity activity, String api)`
 
@@ -46,7 +59,7 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-### Step 3 : Set the user
+### Step 4 : Set the user
 
 1. Open up the home activity (the activity, which comes immediately after the login)
 2. Build the user using `UserIQSDK.UserBuilder` & set the user via `setUser(Context context, User user)` method of UserIQSDK.
@@ -70,7 +83,7 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-### Step 4 : Add the custom parameters (optional)
+### Step 5 : Add the custom parameters (optional)
 
 Add any custom attributes about the user in the `addParams(String key, String value)`
 
@@ -80,7 +93,7 @@ E.g.- `.addParams("location", "Atlanta")`
 
 `.addParams("profession", "Dietician")`
 
-### Step 5 : Logout
+### Step 6 : Logout
 
 If a user logs out, the user can be reset to anonymous user just by calling the `logout` API. Make sure this method is called when the user logs out, so that login screen tracking and other information not related to the user does not get linked to the user.
 
