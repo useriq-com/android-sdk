@@ -3,6 +3,14 @@
 All notable changes in Android SDK are documented here. We adhere to
 [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+### [2.8.3] - 2021-05-17
+
+#### Added
+
+- Null check for instance on React Event methods
+
+---
+
 ### [2.8.2] - 2021-05-03
 
 #### Added
