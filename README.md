@@ -37,7 +37,7 @@ repositories {
     jcenter()
 }
 dependencies {
-  implementation 'com.github.useriq-com:android-sdk:2.8.2'
+  implementation 'com.github.useriq-com:android-sdk:2.8.3'
   ... // your dependencies
 }
 ```
